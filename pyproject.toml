@@ -1,0 +1,19 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+networkx = "^3.4.1"
+graphical-models = {git = "git@github.com:uhlerlab/graphical_models.git"}
+conditional-independence = {git = "git@github.com:uhlerlab/conditional_independence.git"}
+pytorch-lightning = "^2.4.0"
+h5py = "^3.12.1"
+causaldag = {git = "git@github.com:uhlerlab/causaldag.git"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
